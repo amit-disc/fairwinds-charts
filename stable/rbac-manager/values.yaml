@@ -1,4 +1,4 @@
-image:
+  image:
   # image.repository -- The image to run for rbac manager
   repository: quay.io/reactiveops/rbac-manager
   # image.tag -- The tag of the image to run
@@ -76,3 +76,5 @@ serviceMonitor:
   namespace: ""
   # serviceMonitor.interval -- How often to scrape the metrics endpoint
   interval: 60s
+  # serviceMonitor.relabelings -- RelabelConfigs to apply to samples before scraping
+  relabelings: []
